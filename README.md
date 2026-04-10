@@ -34,7 +34,7 @@ Para desplegar el proyecto en un entorno local, siga estos pasos:
    ```
 
 ## Estructura del proyecto
-El proyecto sigue una estructura modular basada en la separación de responsabilidades (MVC), lo que facilita el mantenimiento y la escalabilidad del código:
+El proyecto sigue una estructura modular:
 
 ```text
 yugioh_app/
@@ -178,7 +178,7 @@ def consultar_api_yugioh(nombre_carta):
 ```
 
 ## Integración en el proyecto
-La API se integra de forma modular siguiendo la arquitectura MVC del proyecto:
+La API se integra de esta forma en el proyecto:
 
 1. **Búsqueda de cartas:** El controlador utiliza el servicio de API para buscar coincidencias basadas en el input del usuario.
 2. **Interfaz de usuario:** Los datos se renderizan en Streamlit utilizando componentes personalizados para mostrar imágenes y estadísticas.
