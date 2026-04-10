@@ -24,7 +24,7 @@ wheels/
 # Streamlit
 .streamlit/
 
-# Local Data (Yu-Gi-Oh! Nexus)
+# Local Data (Yu-Gi-Oh!)
 data/*.json
 
 # Environments
