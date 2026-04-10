@@ -43,7 +43,7 @@ def main():
         # 6. Sección de Búsqueda
         query, btn_search, btn_random, btn_clear = render_search_section()
         
-        # Lógica de acciones
+        # Lógica de las acciones
         if btn_search:
             st.session_state.search_term = query
             cards = manejar_busqueda(query)

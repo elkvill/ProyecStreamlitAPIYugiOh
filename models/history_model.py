@@ -22,7 +22,7 @@ def add_to_history(card) -> bool:
         'image_small': card.image_small_url
     }
     
-    # Evitar duplicados consecutivos por nombre
+    # Evitar duplicados consecutivos por el nombre
     if history and history[0].get('name') == card.name:
         return True
     

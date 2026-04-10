@@ -1,5 +1,5 @@
 """
-Funciones auxiliares y utilidades para Yu-Gi-Oh! Nexus
+Funciones auxiliares y utilidades para Yu-Gi-Oh!
 """
 import json
 from pathlib import Path
