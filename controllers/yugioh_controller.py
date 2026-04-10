@@ -5,17 +5,18 @@ import streamlit as st
 from models.card_model import get_card_by_name, get_random_card
 from models.history_model import add_to_history
 
+
 def manejar_busqueda(nombre):
     """
-    Gestiona la búsqueda de una carta, validaciones y mensajes en la interfaz (Versión Clean).
+    Gestiona la búsqueda de una carta, validaciones y mensajes en la interfaz.
     """
     if not nombre or not nombre.strip():
         st.warning("Especifique un término de búsqueda válido.")
         return None
-    
+
     with st.spinner("Accediendo a la red central..."):
         cards = get_card_by_name(nombre)
-        
+
         if cards:
             st.toast(f"Registros encontrados: {len(cards)}")
             st.session_state.search_results = cards
@@ -25,6 +26,7 @@ def manejar_busqueda(nombre):
         else:
             st.error("Error de búsqueda: El término no existe en la base de datos.")
             return None
+
 
 def manejar_aleatorio():
     """
@@ -42,6 +44,7 @@ def manejar_aleatorio():
         else:
             st.error("Fallo de comunicación: No se pudo obtener la ficha.")
             return None
+
 
 def navigate_to_card(name):
     """Callback para navegar a una carta específica"""

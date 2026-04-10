@@ -3,16 +3,18 @@ Layout principal y configuración de diseño Premium
 """
 import streamlit as st
 
+
 def setup_page_config():
     """Configuración de la página de Streamlit"""
     st.set_page_config(
         page_title="Yu-Gi-Oh! Nexus - Card Database",
-        page_icon="Playing Cards", 
+        page_icon="Playing Cards",
         layout="wide"
     )
 
+
 def load_css():
-    """Carga el CSS Premium de Yu-Gi-Oh! Nexus (Versión No-Emoji)"""
+    """Carga el CSS Premium de Yu-Gi-Oh! Nexus"""
     st.markdown("""
         <style>
         /* Estilizamos el contenedor raíz de Streamlit para forzar el tema oscuro */
@@ -135,10 +137,13 @@ def load_css():
         </style>
     """, unsafe_allow_html=True)
 
+
 def render_header():
-    """Renderiza el título principal (Sin emojis)"""
-    st.markdown("<h1 style='text-align: center; font-size: 3.5rem;'>YU-GI-OH! NEXUS</h1>", unsafe_allow_html=True)
+    """Renderiza el título principal"""
+    st.markdown("<h1 style='text-align: center; font-size: 3.5rem;'>YU-GI-OH! NEXUS</h1>",
+                unsafe_allow_html=True)
     st.markdown("<p style='text-align: center; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.3em; font-size: 0.8rem;'>Protocolo de Acceso a Base de Datos de Cartas</p>", unsafe_allow_html=True)
+
 
 def render_footer():
     """Renderiza el footer"""
